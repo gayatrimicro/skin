@@ -51,13 +51,13 @@ body{
 }
 h1 {
     
-  font-size: 55px;
+  font-size: 48px;
   font-weight: 600;
   margin: 0 0 25px;
   line-height: 70px;
   color: rgb(61,70,71);
   font-family: 'Playfair Display', serif;
-  text-align: center;
+  text-align: left;
 }
 h2{
   font-size: 36px;
@@ -85,7 +85,7 @@ h5{
   line-height: 30px;
   color: rgb(1,1,1);
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  text-align: left;
   margin: 0 0 40px;
   font-weight: 400;
 }
@@ -895,7 +895,7 @@ body,
     position: relative;
 
   top: 45%;
-  text-align: center;
+  text-align: left;
   transform: translatey(-50%);
 }
 
@@ -1695,7 +1695,7 @@ input[type=number]
       line-height: 55px;
       color: rgb(61,70,71);
       font-family: 'Playfair Display', serif;
-      text-align: center;
+      text-align: left;
       margin: 0 0 15px;
     }
     h5 {
@@ -2369,6 +2369,7 @@ input[type=number]
     width: 200px !important;
     position: relative;
     top: -6px;
+    left: 18px;
   }
   .twitter , .facebook{
 
