@@ -871,6 +871,7 @@ body,
 .item:nth-child(1) {
   background: url("../img/2.jpg");
   background-size: cover;
+  background-position: right;
   
 }
 .item:nth-child(2) {
