@@ -8,17 +8,17 @@
 
 @media(min-width: 320px) and (max-width: 767px){
 	.text-wrap {
-    top: 61%;
+    top: 73%;
     text-align: center;
 }
 h1 {
     text-align: center;
-    margin: 0 0 18px;
+    margin: 0 0 3px;
 }
 h5 {
     text-align: center;
     font-size: 15px;
-    margin: 0 0 18px;
+    margin: 0 0 3px;
 }
 
 }
@@ -26,5 +26,16 @@ h5 {
 .item:nth-child(1) {
   background-position: unset;
   
+}
+}
+@media(min-width: 320px) and (max-width: 359px){
+    h1 {
+    font-size: 17px;
+}
+}
+@media(min-width: 768px){
+.br_wrd
+{
+    display: block;
 }
 }
