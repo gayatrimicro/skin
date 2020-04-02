@@ -4,12 +4,20 @@
     margin: 25px auto;
     margin-bottom: 30px;
 }
+.btn_wid
+{
+    width: 110px;
+}
 
 
 @media(min-width: 320px) and (max-width: 767px){
 	.text-wrap {
     top: 73%;
     text-align: center;
+}
+.str_pos
+{
+    top: -6px !important;
 }
 h1 {
     text-align: center;
