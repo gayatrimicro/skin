@@ -8,12 +8,244 @@
 {
     width: 110px;
 }
+.sec_signUp
+{
+    margin-top: 100px;
+    padding: 75px 0px 0px 0px;
+}
+.box_frm
+{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.box_frm .form-control
+{
+    height: 40px;
+    width: 100% !important;
+    margin-bottom: 40px;
+    border-radius: 0px;
+    border:0;
+    border-bottom: 1px solid #376bbf;
+    opacity: 1;
+    padding: 0px 10px;
+    box-shadow: none;
+}
+.box_frm h3
+{
+    margin-bottom: 60px;
+}
+.btn_reg
+{
+    background-image: linear-gradient(90deg, #386cc0 1%, #479fd7 100%);
+    color: #fff;
+    border: navajowhite;
+    padding: 14px 40px;
+    border-radius: 50px;
+    margin-top: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/*--------------checkbox----------------------*/
+/* The container */
+.container_chk {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+/* Hide the browser's default checkbox */
+.container_chk input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container_chk:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_chk input:checked ~ .checkmark {
+  background-color: #376bbf;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_chk input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_chk .checkmark:after {
+  left: 8px;
+    top: 3px;
+    width: 8px;
+    height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*------------------------checkbox end--------------------*/
+
+/** Custom Select **/
+.custom-select-wrapper {
+  position: relative;
+  display: block;
+  user-select: none;
+}
+  .custom-select-wrapper select {
+    display: none;
+  }
+  .custom-select {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+  }
+    .custom-select-trigger {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0 65px 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(127,138,140);
+    line-height: 40px;
+    background: #fff;
+    border-radius: 0px;
+    cursor: pointer;
+    text-align: left;
+    border-bottom: 1px solid #376bbf;
+    }
+      .custom-select-trigger:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 10px; height: 10px;
+        top: 50%; right: 25px;
+        margin-top: -3px;
+        border-bottom: 1px solid #999;
+        border-right: 1px solid #999;
+        transform: rotate(45deg) translateY(-50%);
+        transition: all .4s ease-in-out;
+        transform-origin: 50% 0;
+      }
+      .custom-select.opened .custom-select-trigger:after {
+        margin-top: 3px;
+        transform: rotate(-135deg) translateY(-50%);
+      }
+  .custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    margin: 10px 0;
+    border: 1px solid #b5b5b5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px rgba(0,0,0,.07);
+    background: #fff;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+    z-index: 1;
+  }
+  .custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+    .custom-options:before {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 100%; right: 25px;
+      width: 7px; height: 7px;
+      margin-bottom: -4px;
+      border-top: 1px solid #b5b5b5;
+      border-left: 1px solid #b5b5b5;
+      background: #fff;
+      transform: rotate(45deg);
+      transition: all .4s ease-in-out;
+    }
+    .option-hover:before {
+      background: #f9f9f9;
+    }
+    .custom-option {
+    position: relative;
+    display: block;
+    padding: 0 15px;
+    border-bottom: 1px solid #b5b5b5;
+    font-size: 15px;
+    font-weight: 600;
+    color: #777;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;    
+    }
+    .custom-option:first-of-type {
+      border-radius: 4px 4px 0 0;
+    }
+    .custom-option:last-of-type {
+      border-bottom: 0;
+      border-radius: 0 0 4px 4px;
+    }
+    .custom-option:hover,
+    .custom-option.selection {
+      background: #f9f9f9;
+    }
+
+
+    /*--end---*/
 
 @media(min-width: 320px) and (max-width: 767px){
 	.text-wrap {
     top: 73%;
     text-align: center;
+}
+.sec_signUp {
+    padding: 15px 0px 0px 0px;
+}
+.box_frm {
+    width: 90%;
+}
+.box_frm h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 30px;
 }
 .str_pos
 {
